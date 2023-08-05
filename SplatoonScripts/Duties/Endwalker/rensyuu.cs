@@ -28,7 +28,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
          private void circle()
         {
             Element e = new Element(0);
-            e.Enabled = true
+            e.Enabled = true;
         }
     }
 }
