@@ -166,7 +166,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
             directionRight = (int)Indicator.refX < 100 ? false : true;
             Indicator.Enabled = true;
             PluginLog.Information($"first tower, {Indicator.refX}, {Indicator.refY}, colorBlack?: {lastTowerBlack}"); 
-            ScopeLevel.Chat.Print($"!PlayerMove {Indicator.refX} {Indicator.refY}");
+            Svc.Chat.Print($"!PlayerMove {Indicator.refX} {Indicator.refY}");
         }
 
         private void SecondTower()
@@ -212,7 +212,7 @@ namespace SplatoonScriptsOfficial.Duties.Endwalker
                     Indicator.refY = lastTowerBlack ? blackPos.Y : whitePos.Y;
                 }
                 PluginLog.Information($"second/third tower, {Indicator.refX}, {Indicator.refY}");
-                ScopeLevel.Chat.Print($"!PlayerMove {Indicator.refX} {Indicator.refY}");
+                Svc.Chat.Print($"!PlayerMove {Indicator.refX} {Indicator.refY}");
             }, 1500); 
         }
 
